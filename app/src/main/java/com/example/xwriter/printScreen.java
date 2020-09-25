@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -31,6 +32,11 @@ public class printScreen extends AppCompatActivity {
         ClipboardManager clipboardManager;
         clipboardManager= (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
         ClipData clipData;
-        clipData = ClipData.newPlainText("text", result.getText());
+    }
+
+    public void copy(View view) {
+        ClipboardManager manager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+        ClipData clipData = ClipData.newPlainText("text", result.getText());
+        manager.setPrimaryClip(clipData);
     }
 }
