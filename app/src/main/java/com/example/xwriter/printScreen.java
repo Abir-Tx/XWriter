@@ -2,6 +2,8 @@ package com.example.xwriter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -25,5 +27,10 @@ public class printScreen extends AppCompatActivity {
         for (int i = 0; i < counter; i++) {
             result.append(holder+"\n");
         }
+
+        ClipboardManager clipboardManager;
+        clipboardManager= (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+        ClipData clipData;
+        clipData = ClipData.newPlainText("text", result.getText());
     }
 }
