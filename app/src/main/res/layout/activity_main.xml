@@ -8,6 +8,18 @@
     android:orientation="vertical"
     android:background="@android:color/background_dark"
     >
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:text="Enter your text here"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        >-->
+
+<!--    </TextView>-->
+
     <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
