@@ -20,8 +20,9 @@ public class printScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_print_screen);
         String holder = getIntent().getStringExtra("INPUT");
+        int counter =  getIntent().getIntExtra("COUNT",1);
         result = findViewById(R.id.result);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < counter; i++) {
             result.append(holder+"\n");
         }
     }

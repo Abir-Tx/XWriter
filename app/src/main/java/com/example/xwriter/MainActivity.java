@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         holder = input.getText().toString();
 
-        Intent intent = new Intent(MainActivity.this, printScreen.class);
+        Intent intent = new Intent(MainActivity.this, Counter.class);
         intent.putExtra("INPUT",holder);
         startActivity(intent);
     }
