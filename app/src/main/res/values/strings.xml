@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">XWriter</string>
+    <string name="input_tooltip">Input the text you want to print</string>
+    <string name="print">Print</string>
 </resources>

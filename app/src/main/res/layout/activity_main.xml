@@ -25,11 +25,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="@android:color/background_light"
+        android:background="@android:color/darker_gray"
+        android:outlineProvider="background"
+        android:outlineAmbientShadowColor="@android:color/holo_blue_dark"
         android:textSize="40dp"
+        android:padding="10dp"
+        android:tooltipText="string/input_tooltip"
+        android:focusable="true"
+        android:textIsSelectable="true"
+        android:defaultFocusHighlightEnabled="true"
+
         >
 
     </EditText>
+
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
@@ -37,7 +46,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="20dp"
-        android:text="Print"
+        android:text="@string/print"
         android:textSize="25dp"
         android:hapticFeedbackEnabled="true"
         android:background="@android:color/black"
@@ -45,6 +54,7 @@
         android:textAllCaps="false"
         android:textFontWeight="800"
         android:onClick="print"
+
         >
 
     </Button>

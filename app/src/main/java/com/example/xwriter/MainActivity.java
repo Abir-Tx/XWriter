@@ -28,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         holder = input.getText().toString();
 
         Intent intent = new Intent(MainActivity.this, Counter.class);
-        intent.putExtra("INPUT",holder);
-        startActivity(intent);
+        if (input.getText().toString().equals("Abir")){
+            input.setText("Input your text first");
+        }
+        else {
+            intent.putExtra("INPUT", holder);
+            startActivity(intent);
+        }
     }
 }
