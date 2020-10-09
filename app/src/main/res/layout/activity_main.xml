@@ -30,7 +30,6 @@
         android:outlineAmbientShadowColor="@android:color/holo_blue_dark"
         android:textSize="40dp"
         android:padding="10dp"
-        android:tooltipText="string/input_tooltip"
         android:focusable="true"
         android:textIsSelectable="true"
         android:defaultFocusHighlightEnabled="true"
