@@ -24,6 +24,7 @@
         android:layout_gravity="center_vertical"
         android:background="@android:color/background_light"
         android:textSize="40dp"
+        android:inputType="numberDecimal"
         android:layout_marginTop="20dp"
         android:focusable="true"
 
