@@ -7,6 +7,7 @@ import android.content.ClipboardManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -38,5 +39,9 @@ public class printScreen extends AppCompatActivity {
         ClipboardManager manager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
         ClipData clipData = ClipData.newPlainText("text", result.getText());
         manager.setPrimaryClip(clipData);
+
+
+        Toast textCopied = Toast.makeText(getApplicationContext(), "Copied to clipboard", Toast.LENGTH_LONG);
+        textCopied.show();
     }
 }
