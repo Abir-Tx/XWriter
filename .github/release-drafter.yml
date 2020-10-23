@@ -2,3 +2,12 @@ template: |
   ## Changelog
 
   $CHANGES
+
+
+  ## Contributors
+  
+  $CONTRIBUTORS
+  
+  ## Pervious Version
+  
+  $PREVIOUS_TAG
