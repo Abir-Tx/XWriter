@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText input;
@@ -28,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
         holder = input.getText().toString();
 
         Intent intent = new Intent(MainActivity.this, Counter.class);
-        if (input.getText().toString().equals(" ")){
-            input.setText("Input your text first");
+        if (input.getText().toString().equals("")){
+            Toast nullInputToast = Toast.makeText(getApplicationContext(), "Input a text first", Toast.LENGTH_SHORT);
+            nullInputToast.show();
         }
         else {
             intent.putExtra("INPUT", holder);
