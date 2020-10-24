@@ -18,7 +18,6 @@ public class Counter extends AppCompatActivity {
 
         et = findViewById(R.id.count);
 
-
     }
 
     public void print2(View view) {
