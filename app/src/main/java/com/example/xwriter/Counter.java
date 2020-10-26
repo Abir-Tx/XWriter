@@ -30,7 +30,7 @@ public class Counter extends AppCompatActivity {
         }
         int checkNumber = Integer.parseInt(holder);
         if (checkNumber > 200000){
-            Toast nullInputToast = Toast.makeText(getApplicationContext(), "Can not take more than 2 Lakh input", Toast.LENGTH_SHORT);
+            Toast nullInputToast = Toast.makeText(getApplicationContext(), "Can not take more than 200000 input", Toast.LENGTH_SHORT);
             nullInputToast.show();
         }
         else{

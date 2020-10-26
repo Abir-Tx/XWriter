@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="How many times? "
         android:textColor="@android:color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:layout_marginTop="10dp"
         />
 
@@ -23,21 +23,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:background="@android:color/background_light"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:inputType="numberDecimal"
         android:layout_marginTop="20dp"
         android:focusable="true"
 
         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Submit"
-        android:textSize="20dp"
-        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="20dp"
         android:letterSpacing="1"
         android:onClick="print2"
-        android:layout_marginTop="20dp"/>
+        android:text="Submit"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:visibility="visible" />
 
 </LinearLayout>
