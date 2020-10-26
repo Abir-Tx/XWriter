@@ -3,4 +3,6 @@
     <string name="input_tooltip">Input the text you want to print</string>
     <string name="print">Print</string>
     <string name="copyButtonToolTip">Press To Copy</string>
+    <string name="AdvancedButton">Advanced Options</string>
+
 </resources>
