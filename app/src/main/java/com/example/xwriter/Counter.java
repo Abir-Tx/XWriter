@@ -31,23 +31,29 @@ public class Counter extends AppCompatActivity {
             Toast nullInputToast = Toast.makeText(getApplicationContext(), "Input a Number first", Toast.LENGTH_SHORT);
             nullInputToast.show();
         }
-        int checkNumber = Integer.parseInt(holder);
-        if (checkNumber > 200000){
-            Toast nullInputToast = Toast.makeText(getApplicationContext(), "Can not take more than 200000 input", Toast.LENGTH_SHORT);
-            nullInputToast.show();
-        }
         else{
-            int i = Integer.parseInt(holder);
-            Intent in = new Intent(Counter.this, printScreen.class);
-            in.putExtra("COUNT",i);
-            in.putExtra("INPUT",inputHolder);
-            startActivity(in);
+            int checkNumber = Integer.parseInt(holder);
+            if (checkNumber > 200000){
+                Toast nullInputToast = Toast.makeText(getApplicationContext(), "Can not take more than 200000 input", Toast.LENGTH_SHORT);
+                nullInputToast.show();
+            }
+            else{
+                int i = Integer.parseInt(holder);
+                Intent in = new Intent(Counter.this, printScreen.class);
+                in.putExtra("COUNT",i);
+                in.putExtra("INPUT",inputHolder);
+                startActivity(in);
+            }
         }
-
 
     }
 
     public void advanceView(View view){
-        rb.setVisibility(View.VISIBLE);
+        if (rb.getVisibility() == View.VISIBLE){
+            rb.setVisibility(View.INVISIBLE);
+        }
+        else{
+            rb.setVisibility(View.VISIBLE);
+        }
     }
 }

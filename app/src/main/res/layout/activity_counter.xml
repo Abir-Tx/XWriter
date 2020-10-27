@@ -63,5 +63,6 @@
         android:textColor="@android:color/background_light"
         android:layout_marginTop="10dp"
         android:visibility="invisible"
-        ></RadioButton>
+
+        />
 </LinearLayout>
