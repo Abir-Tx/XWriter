@@ -40,6 +40,7 @@
         android:onClick="copy"
         android:src="?attr/actionModeCopyDrawable"
         android:tint="#000000"
+        android:tooltipText="@string/copyButtonToolTip"
         android:visibility="visible"
         app:backgroundTint="#FFFFFF" />
 </RelativeLayout>

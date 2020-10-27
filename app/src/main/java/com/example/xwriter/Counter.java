@@ -6,18 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class Counter extends AppCompatActivity {
 
     EditText et;
+    RadioButton rb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
 
         et = findViewById(R.id.count);
-
+        rb = findViewById(R.id.incremental);
     }
 
     public void print2(View view) {
@@ -42,5 +45,9 @@ public class Counter extends AppCompatActivity {
         }
 
 
+    }
+
+    public void advanceView(View view){
+        rb.setVisibility(View.VISIBLE);
     }
 }

@@ -42,4 +42,26 @@
         android:textSize="20sp"
         android:visibility="visible" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Advanced Options"
+        android:visibility="visible"
+        android:onClick="advanceView"
+
+        >
+
+    </Button>
+
+    <RadioButton
+        android:id="@+id/incremental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Incremental"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        ></RadioButton>
 </LinearLayout>
