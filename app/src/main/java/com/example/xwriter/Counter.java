@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class Counter extends AppCompatActivity {
 
     EditText et;
-    RadioButton rb;
+    RadioButton rb, rb2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class Counter extends AppCompatActivity {
 
         et = findViewById(R.id.count);
         rb = findViewById(R.id.incremental);
+        rb2 = findViewById(R.id.nothing);
     }
 
     public void print2(View view) {
@@ -51,9 +52,21 @@ public class Counter extends AppCompatActivity {
     public void advanceView(View view){
         if (rb.getVisibility() == View.VISIBLE){
             rb.setVisibility(View.INVISIBLE);
+            rb2.setVisibility(View.INVISIBLE);
         }
         else{
             rb.setVisibility(View.VISIBLE);
+            rb2.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void incremental(View view){
+        if (rb.isChecked()){
+            Toast test = Toast.makeText(getApplicationContext(),"Abir-Tx is Working on it. Will be available Soon", Toast.LENGTH_LONG);
+            test.show();
+        }
+        else{
+            System.out.println("hey bro");
         }
     }
 }

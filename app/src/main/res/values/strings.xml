@@ -7,4 +7,14 @@
 
     <string name="shareButtonDescription">Opens the share menu for sharing copied text to different apps</string>
     <string name="copyButtonDescription">Copies the text from this windows to the clipboard</string>
+
+<!--    Advanced Button-->
+    <string name="advanceOptionsButtonText">Advanced Options</string>
+
+<!--    Submit Button-->
+    <string name="submitButtonText">Submit</string>
+
+<!--    Radio Button-->
+    <string name="incrementalButtonText">Incremental</string>
+    <string name="nothingButtonText">Nothing</string>
 </resources>
