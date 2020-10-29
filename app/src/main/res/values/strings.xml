@@ -3,4 +3,18 @@
     <string name="input_tooltip">Input the text you want to print</string>
     <string name="print">Print</string>
     <string name="copyButtonToolTip">Press To Copy</string>
+    <string name="shareButtonTip">Press To Share</string>
+
+    <string name="shareButtonDescription">Opens the share menu for sharing copied text to different apps</string>
+    <string name="copyButtonDescription">Copies the text from this windows to the clipboard</string>
+
+<!--    Advanced Button-->
+    <string name="advanceOptionsButtonText">Advanced Options</string>
+
+<!--    Submit Button-->
+    <string name="submitButtonText">Submit</string>
+
+<!--    Radio Button-->
+    <string name="incrementalButtonText">Incremental</string>
+    <string name="nothingButtonText">Nothing</string>
 </resources>

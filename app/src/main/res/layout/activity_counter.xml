@@ -37,9 +37,51 @@
         android:layout_marginTop="20dp"
         android:letterSpacing="1"
         android:onClick="print2"
-        android:text="Submit"
+        android:text=""
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="20sp"
         android:visibility="visible" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/advanceOptionsButtonText"
+        android:visibility="visible"
+        android:onClick="advanceView"
+
+        >
+
+    </Button>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <RadioButton
+            android:id="@+id/incremental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incrementalButtonText"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:onClick="incremental"
+
+            />
+        <RadioButton
+            android:id="@+id/nothing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nothingButtonText"
+            android:textColor="@android:color/background_light"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:onClick="incremental"
+
+            />
+    </RadioGroup>
 </LinearLayout>
