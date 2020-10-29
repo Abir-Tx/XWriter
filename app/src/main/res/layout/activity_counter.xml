@@ -18,16 +18,17 @@
 
     <EditText
         android:id="@+id/count"
+        style="@android:style/Widget.DeviceDefault.EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="20dp"
         android:background="@android:color/background_light"
         android:focusable="true"
+        android:textColor="@android:color/black"
         android:inputType="numberDecimal"
         android:textSize="40sp"
-
-        />
+        android:visibility="visible" />
 
     <Button
         android:layout_width="wrap_content"

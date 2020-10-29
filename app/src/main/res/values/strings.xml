@@ -17,4 +17,6 @@
 <!--    Radio Button-->
     <string name="incrementalButtonText">Incremental</string>
     <string name="nothingButtonText">Nothing</string>
+
+    <string name="inputPreText">Input your text here</string>
 </resources>
