@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@android:color/black"
+    android:orientation="vertical"
     tools:context=".Counter">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="How many times? "
         android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"
-        />
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/count"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@android:color/background_light"
-        android:textSize="40sp"
-        android:inputType="numberDecimal"
         android:layout_marginTop="20dp"
+        android:background="@android:color/background_light"
         android:focusable="true"
+        android:inputType="numberDecimal"
+        android:textSize="40sp"
 
         />
 
@@ -37,7 +36,7 @@
         android:layout_marginTop="20dp"
         android:letterSpacing="1"
         android:onClick="print2"
-        android:text=""
+        android:text="@string/submitButtonText"
         android:textColor="@android:color/holo_blue_bright"
         android:textSize="20sp"
         android:visibility="visible" />
@@ -47,9 +46,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
+        android:onClick="advanceView"
         android:text="@string/advanceOptionsButtonText"
         android:visibility="visible"
-        android:onClick="advanceView"
 
         >
 
@@ -58,29 +57,31 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginTop="20dp"
-        >
+        android:orientation="vertical">
+
         <RadioButton
             android:id="@+id/incremental"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="incremental"
             android:text="@string/incrementalButtonText"
             android:textColor="@android:color/background_light"
-            android:layout_marginTop="10dp"
             android:visibility="invisible"
-            android:onClick="incremental"
 
             />
+
         <RadioButton
             android:id="@+id/nothing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="incremental"
             android:text="@string/nothingButtonText"
             android:textColor="@android:color/background_light"
-            android:layout_marginTop="10dp"
             android:visibility="invisible"
-            android:onClick="incremental"
+            android:checked="true"
 
             />
     </RadioGroup>

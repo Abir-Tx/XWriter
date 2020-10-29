@@ -20,20 +20,26 @@ import java.io.IOException;
 
 public class printScreen extends AppCompatActivity {
     TextView result;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_print_screen);
         String holder = getIntent().getStringExtra("INPUT");
-        int counter =  getIntent().getIntExtra("COUNT",1);
-        result = findViewById(R.id.result);
-        for (int i = 0; i < counter; i++) {
-            result.append(holder+"\n");
-        }
+        int counter = getIntent().getIntExtra("COUNT", 1);
+        boolean isIncrementalHolder = getIntent().getBooleanExtra("isIncremental", false);
 
-        ClipboardManager clipboardManager;
-        clipboardManager= (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-        ClipData clipData;
+        if (!isIncrementalHolder) {
+            result = findViewById(R.id.result);
+            for (int i = 0; i < counter; i++) {
+                result.append(holder + "\n");
+            }
+        } else if (isIncrementalHolder) {
+            result = findViewById(R.id.result);
+            for (int i = 0; i < counter; i++) {
+                result.append(holder + " " + (i + 1) + "\n");
+            }
+        }
     }
 
     public void copy(View view) {
@@ -46,7 +52,7 @@ public class printScreen extends AppCompatActivity {
         textCopied.show();
     }
 
-    public void share(View view){
+    public void share(View view) {
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
         String shareBody = result.getText().toString();

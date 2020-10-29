@@ -13,6 +13,7 @@ public class Counter extends AppCompatActivity {
 
     EditText et;
     RadioButton rb, rb2;
+    boolean isIncremental = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,45 +29,57 @@ public class Counter extends AppCompatActivity {
         String inputHolder = getIntent().getStringExtra("INPUT");
         String holder = et.getText().toString();
 
-        if (et.getText().toString().equals("")){
+        if (et.getText().toString().equals("")) {
             Toast nullInputToast = Toast.makeText(getApplicationContext(), "Input a Number first", Toast.LENGTH_SHORT);
             nullInputToast.show();
-        }
-        else{
+        } else {
             int checkNumber = Integer.parseInt(holder);
-            if (checkNumber > 200000){
+            if (checkNumber > 200000) {
                 Toast nullInputToast = Toast.makeText(getApplicationContext(), "Can not take more than 200000 input", Toast.LENGTH_SHORT);
                 nullInputToast.show();
-            }
-            else{
-                int i = Integer.parseInt(holder);
-                Intent in = new Intent(Counter.this, printScreen.class);
-                in.putExtra("COUNT",i);
-                in.putExtra("INPUT",inputHolder);
-                startActivity(in);
+            } else {
+                if (isIncremental) {
+                    int i = Integer.parseInt(holder);
+                    Intent in = new Intent(Counter.this, printScreen.class);
+                    in.putExtra("COUNT", i);
+                    in.putExtra("INPUT", inputHolder);
+                    in.putExtra("isIncremental", isIncremental);
+                    startActivity(in);
+                } else {
+                    int i = Integer.parseInt(holder);
+                    Intent in = new Intent(Counter.this, printScreen.class);
+                    in.putExtra("COUNT", i);
+                    in.putExtra("INPUT", inputHolder);
+                    startActivity(in);
+                }
+
             }
         }
 
     }
 
-    public void advanceView(View view){
-        if (rb.getVisibility() == View.VISIBLE){
+    public void advanceView(View view) {
+        if (rb.getVisibility() == View.VISIBLE) {
             rb.setVisibility(View.INVISIBLE);
             rb2.setVisibility(View.INVISIBLE);
-        }
-        else{
+        } else {
             rb.setVisibility(View.VISIBLE);
             rb2.setVisibility(View.VISIBLE);
         }
     }
 
-    public void incremental(View view){
-        if (rb.isChecked()){
-            Toast test = Toast.makeText(getApplicationContext(),"Abir-Tx is Working on it. Will be available Soon", Toast.LENGTH_LONG);
-            test.show();
-        }
-        else{
-            System.out.println("hey bro");
+    public void incremental(View view) {
+        if (rb.isChecked()) {
+            isIncremental = true;
+        } else if (!rb.isChecked()) {
+            isIncremental = false;
+        } else if (rb2.isChecked()) {
+            isIncremental = false;
+        } else if (!rb2.isChecked()) {
+            isIncremental = false;
+        } else {
+            isIncremental = false;
+            System.out.println("Boolean isIncremental is not working. Error ! Going with false value");
         }
     }
 }
