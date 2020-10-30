@@ -17,3 +17,5 @@ XWriter is a **Text Repeating** App. The app let's a user create a given texts  
 * Very small & lightweight app
 * User can copy or direct share to other apps from the **XWriter** App
 
+## Requirements
+- Requires Android 4.1 or above to run the app
