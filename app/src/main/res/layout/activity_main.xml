@@ -53,7 +53,7 @@
         android:textSize="25sp"
         android:hapticFeedbackEnabled="true"
         android:background="@android:color/black"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/holo_blue_bright"
         android:textAllCaps="false"
         android:textFontWeight="800"
         android:onClick="print"

@@ -50,6 +50,7 @@
         android:onClick="advanceView"
         android:text="@string/advanceOptionsButtonText"
         android:visibility="visible"
+        android:textColor="@android:color/holo_blue_bright"
 
         >
 
