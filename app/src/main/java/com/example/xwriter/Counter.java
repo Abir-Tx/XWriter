@@ -79,7 +79,7 @@ public class Counter extends AppCompatActivity {
             isIncremental = false;
         } else {
             isIncremental = false;
-            System.out.println("Boolean isIncremental is not working. Error ! Going with false value");
+            System.out.println("Boolean isIncremental is not working. Error ! Going with false value"); //Error message for developers
         }
     }
 }

@@ -1,3 +1,8 @@
+/* A java Source code & Android App project by Mushfiqur Rahman Abir.
+All Rights Reserved By Mushfiqur Rahman Abir
+This is my first hello world android app built by myself
+ */
+
 package com.example.xwriter;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,7 +12,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
