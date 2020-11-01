@@ -2,7 +2,7 @@
     <string name="app_name">XWriter</string>
     <string name="versionName">1.0</string>
     <string name="input_tooltip">Input the text you want to print</string>
-    <string name="print">Print</string>
+    <string name="print">Next</string>  <!-- Previously Print which is shown in the first main page -->
     <string name="copyButtonToolTip">Press To Copy</string>
     <string name="shareButtonTip">Press To Share</string>
 
@@ -13,7 +13,7 @@
     <string name="advanceOptionsButtonText">Advanced Options</string>
 
 <!--    Submit Button-->
-    <string name="submitButtonText">Submit</string>
+    <string name="submitButtonText">Print</string>    <!-- Previously Submit,  which is shown in the 2nd page -->
 
 <!--    Radio Button-->
     <string name="incrementalButtonText">Incremental</string>
