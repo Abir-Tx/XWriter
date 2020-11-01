@@ -30,12 +30,12 @@
 
         android:defaultFocusHighlightEnabled="true"
         android:focusable="true"
+        android:hint="@string/inputPreText"
         android:inputType="textMultiLine"
         android:outlineAmbientShadowColor="@android:color/holo_blue_dark"
         android:outlineProvider="background"
         android:padding="10dp"
         android:selectAllOnFocus="true"
-        android:text="@string/inputPreText"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textIsSelectable="true"
         android:textSize="40sp">
