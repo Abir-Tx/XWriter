@@ -2,6 +2,8 @@
 
 ![XWriter Icon](https://i.imgur.com/4YtK20c.png)
 
+[![Java CI Gradle](https://github.com/Abir-Tx/XWriter/actions/workflows/gradle.yml/badge.svg)](https://github.com/Abir-Tx/XWriter/actions/workflows/gradle.yml)
+
 An **Android** app for printing a text/sentence as many times as needed & copy them into the clipboard with just one click.
 
 > Basically it writes a text multiples times for you in just miliseconds
